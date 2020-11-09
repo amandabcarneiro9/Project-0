@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Advanced Search</title>
+</head>
+
+
+<style>
+    .topbar {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 16px;
+    }
+
+    img {
+        height: 33px;
+        width: 92px;
+    }
+
+    .title {
+        display: flex;
+        color: red;
+        font-size: 26px;
+        margin: 35px 44px;
+
+    }
+
+    form {
+        padding: 10px;
+        margin: 10px o;
+        max-width: 700px;
+    }
+
+    .forms {
+        display: grid;
+        grid-template-areas: "label input";
+        grid-template-columns: 179px 500px;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .findpages {
+        font-size: 21px;
+    }
+
+    input[type=submit] {
+        float: right;
+        margin: 10px;
+        border-radius: 1px;
+        border: solid 1px #4285f4;
+        background-color: #4285f4;
+        font-style: normal;
+        color: white;
+        padding: 8px;
+    }
+
+    input[type=text] {
+        border-radius: 1px;
+        border: solid 1px lightgray;
+        border-top-color: #c0c0c0;
+        height: 24px;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="topbar">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div class="links">
+                <a href="file:///Users/amanda/Studies/html-studies/GoogleImages.html"> Google Images</a>
+                <br>
+
+
+                <a href="file:///Users/amanda/Studies/html-studies/GoogleSearch.html"> Back</a>
+            </div>
+        </div>
+
+        <div>
+            <span class="title">Advanced Search</span>
+        </div>
+        <div>
+            <p class="findpages">Find pages with...</p>
+
+            <form action="https://www.google.com/search">
+                <div class="forms">
+                    <label for="first">All these words:</label>
+                    <input type="text" name="as_q" id="first">
+
+                    <label for="second">This exact word on phrase:</label>
+                    <input type="text" name="as_epq" id="second">
+
+                    <label for="thrid">Any of these words:</label>
+                    <input type="text" name="as_oq" id="thrid">
+
+                    <label for="four">None of these words: </label>
+                    <input type="text" name="as_eq" id="four">
+                </div>
+
+                <input type="submit" name="https://www.google.com/advanced_search" value="Advanced Search">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
